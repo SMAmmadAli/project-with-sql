@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;  
+    background: #7F7F7F;
+    /* background: linear-gradient(35deg, #111111, #ffffff); */
+ }
+.fa{
+    position: absolute;
+    right: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+    color:  #4158d0;
+    font-size: 20px;
+}
+.top{
+    position: absolute;
+    top: 30px;
+    left: 470px;
+    font-size: larger;
+}
+.top h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.top p {
+    margin-left: -75px;
+}
+.wrapper{
+    position: absolute;
+    left: 30px;
+    bottom: 160px;
+    height: 300px;
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.wrapper .input-data input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+.wrapper .input-data input:focus ~ label,
+.wrapper .input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.wrapper .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:  #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;  
+}
+.wrapper .input-data input:focus ~ .underline:before,
+.wrapper .input-data input:valid ~ .underline:before{
+    transform: scaleX(1);  
+}
+.checkbox{
+    position: absolute;
+    bottom: 110px;
+    font-size: smaller;
+}
+.checkbox span{
+    margin-left: 120px;
+}
+.submit-btn{
+    width: 130px;
+    height: 32px;
+    background: #fff;
+    color:  #4158d0;
+    border: none;
+    border: 2px solid #4158d0;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 30px;
+}
+.line{
+    border-left: 2px solid #fff;
+    height: 340px;
+    position: absolute;
+    left: 480px;
+    top: -20px;
+}
+.or{
+    position: absolute;
+    left: 460px;
+    top: 120px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.right-side{
+    position: absolute;
+    left: 515px;
+    bottom: 0px;
+    height: 300px;
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.right-title{
+    display: block;
+    font-size: 28px;
+    color:  rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-shadow: 0 2px 4px #4158d0;
+}
+.facebook, .twitter, .google{
+    font-size: x-small;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 85px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    transition: 0.2s;
+    color:  #fff;
+    cursor: pointer;
+}
+.facebook{
+    background-color: #3b5998;
+}
+.twitter{
+    background-color: #00acee;
+}
+.google{
+    background-color: #4285F4;
+}
+
+
+
+/* SIGN UP STYLING IS STARTED */
+
+
+
+
+.wrapper1{
+    position: absolute;
+    left: 30px;
+    bottom: 150px;
+    height: 350px;
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper1 .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.wrapper1 .input-data input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+.wrapper1 .input-data input:focus ~ label,
+.wrapper1 .input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+.wrapper1 .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.wrapper1 .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:  #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;  
+}
+.wrapper1 .input-data input:focus ~ .underline:before,
+.wrapper1 .input-data input:valid ~ .underline:before{
+    transform: scaleX(1);  
+}
+
+.right-side1{
+    position: absolute;
+    left: 515px;
+    bottom: 0px;
+    height: 350px;
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }
+ .line1{
+    border-left: 2px solid #fff;
+    height: 390px;
+    position: absolute;
+    left: 480px;
+    top: -20px;
+}
+.or1{
+    position: absolute;
+    left: 460px;
+    top: 150px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.facebook1, .twitter1, .google1{
+    font-size: x-small;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    transition: 0.2s;
+    color:  #fff;
+    cursor: pointer;
+}
+.facebook1{
+    background-color: #3b5998;
+}
+.twitter1{
+    background-color: #00acee;
+}
+.google1{
+    background-color: #4285F4;
+}
+.para{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 50px;
+    margin-left: -180px; 
+}
+.para a{
+    text-decoration: none;
+    color: #4fff;
+    cursor: pointer;
+}
+.para1{
+    margin-left: 80px;
+}
+.img1{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 15px;
+    right: -250px;
+}
+.img2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 15px;
+    right: -300px;
+}
+.top a{
+    text-decoration: none;
+    color: #4fff;
+    cursor: pointer;
+}
